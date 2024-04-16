@@ -1,4 +1,6 @@
 import { Nunito } from "next/font/google";
+
+import "remixicon/fonts/remixicon.css";
 import "./globals.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
@@ -11,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>{children}</body>
+      <body className={`${nunito.className} bg-gray-100`}>{children}</body>
     </html>
   );
 }
