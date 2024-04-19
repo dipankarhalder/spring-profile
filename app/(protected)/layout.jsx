@@ -5,7 +5,9 @@ export default function ProtectedLayout({ children }) {
   return (
     <div className="flex flex-col">
       <Header />
-      {children}
+      <div className="flex mt-6">
+        <div className="container max-w-7xl mx-[auto]">{children}</div>
+      </div>
       <Footer />
     </div>
   );
